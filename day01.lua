@@ -1,7 +1,3 @@
-dbg = require 'debugger'
-
-dbg.call(function()
-
 list = {}
 for line in io.lines("day01.txt") do
 	table.insert(list, tonumber(line))
@@ -15,5 +11,3 @@ for i = 1, #list do
 		end
 	end
 end
-
-end)
