@@ -7,8 +7,8 @@
 #include <assert.h>
 
 int seat_id(const char* str){
-	uint64_t a = 48038396025285290; memcpy(&a, str, 7);
-	uint64_t b = 11184810; memcpy(&b, str + 7, 3);
+	uint64_t a = 12297829382473034410u; memcpy(&a, str, 8);
+	uint64_t b = 13527612320720337851u; memcpy(&b, str + 7, 3);
 	return (1 - a & 1130315200594948)*1155177711073787968/72057594037927936*010 + (b & 1052688)%0777/4;
 }
 
